@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mental Health Journal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mental Health Journal</h1>
+    <p>Track your mood and reflect daily</p>
+
+    <label for="mood">Today's Mood:</label>
+    <select id="mood">
+      <option value="😊 Happy">😊 Happy</option>
+      <option value="😔 Sad">😔 Sad</option>
+      <option value="😠 Angry">😠 Angry</option>
+      <option value="😌 Calm">😌 Calm</option>
+      <option value="😟 Anxious">😟 Anxious</option>
+    </select>
+
+    <label for="entry">Daily Reflection:</label>
+    <textarea id="entry" rows="5" placeholder="Write your thoughts here..."></textarea>
+
+    <button onclick="saveEntry()">Save Entry</button>
+
+    <h2>Previous Entries</h2>
+    <div id="entries"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
